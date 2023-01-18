@@ -5,5 +5,9 @@ from setuptools import setup
 setup(
     name='uu-sphinx-theme',
     version='1.0.0',
-    cmdclass={},
+    entry_points={
+        "sphinx.html_themes": {
+            "uu_sphinx_theme": "uu_sphinx_theme"
+        }
+    }
 )

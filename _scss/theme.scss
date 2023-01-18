@@ -1,0 +1,171 @@
+@import "../node_modules/uu-bootstrap/scss/configuration";
+
+$breadcrumb-active-color: $body-color;
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/utilities/api";
+@import "../node_modules/uu-bootstrap/scss/components";
+
+.admonition {
+  @extend .alert;
+
+  .admonition-title {
+    font-weight: bolder;
+    background: rgba(0, 0, 0, .65) var(--bs-alert-bg);
+    background-blend-mode: darken;
+  }
+
+  &.tip, &.note {
+    @extend .alert-info;
+  }
+
+  &.warning {
+    @extend .alert-warning;
+  }
+
+  &.error {
+    @extend .alert-danger;
+  }
+}
+
+.navbar-collapse ul {
+  @extend .navbar-nav;
+
+  color: red;
+
+  li {
+    @extend .nav-item;
+
+    a {
+      @extend .nav-link;
+    }
+  }
+
+  li.current a {
+    @extend .active;
+  }
+}
+
+h4, h5, h6 {
+  font-weight: bold;
+}
+
+li > p {
+  margin: 0;
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
+
+.headerlink, .headerlink:hover {
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+.headerlink {
+  color: transparent;
+}
+
+.toctree-wrapper .caption .caption-text {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.highlight {
+  padding: 0.7rem;
+  margin-bottom: .5rem;
+
+  pre {
+    margin-bottom: 0;
+  }
+}
+
+.document {
+  li {
+    padding-bottom: .5rem;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  a {
+    text-decoration: none;
+  }
+}
+
+.sig {
+  font-family: 'Monospaced', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+  font-weight: 600;
+}
+
+.class > dt.sig, .function > dt.sig {
+  background: var(--bs-light);
+  padding: .3rem .7rem;
+  margin-top: .3rem;
+}
+
+.class > dd, .function > dd {
+  padding-top: 1rem;
+}
+
+.class dd, .function dd, .attribute dd, .method dd {
+  padding-left: 1.5rem;
+}
+
+.property {
+  font-weight: 300;
+}
+
+.attribute .sig-name {
+  font-style: italic;
+}
+
+.sig-name, code.descname {
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.sig-name {
+  font-size: 1.1em;
+}
+
+code.descname {
+  font-size: 1.2em;
+}
+
+.sig-prename, code.descclassname {
+  background-color: transparent;
+}
+
+.optional {
+  font-size: 1.3em;
+}
+
+.sig-paren {
+  font-size: larger;
+}
+
+.sig-param.n {
+  font-style: italic;
+}
+
+/* C++ specific styling */
+
+.sig-inline.c-texpr,
+.sig-inline.cpp-texpr {
+  font-family: unset;
+}
+
+.sig.c .k, .sig.c .kt,
+.sig.cpp .k, .sig.cpp .kt {
+  color: #0033B3;
+}
+
+.sig.c .m,
+.sig.cpp .m {
+  color: #1750EB;
+}
+
+.sig.c .s, .sig.c .sc,
+.sig.cpp .s, .sig.cpp .sc {
+  color: #067D17;
+}

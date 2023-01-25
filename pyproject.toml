@@ -21,8 +21,7 @@ dependencies = [
 ]
 
 [project.urls]
-repository = "https://github.com/DH-IT-Portal-Development/django-shared-core"
-documentation = "https://dh-it-portal-development.github.io/django-shared-core/"
+repository = "https://github.com/CentreForDigitalHumanities/sphinx-theme"
 
 [project.entry-points]
 "sphinx.html_themes" = { uu_sphinx_theme = "uu_sphinx_theme" }

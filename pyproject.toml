@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[project]
+name = "uu_sphinx_theme"
+description = "A theme for sphinx using UU branding"
+version = "1.0.0"
+readme = "README.md"
+authors = [
+    {name = "DH-IT Portal Development", email = "portaldev.gw@uu.nl"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "sphinx",
+]
+
+[project.urls]
+repository = "https://github.com/DH-IT-Portal-Development/django-shared-core"
+documentation = "https://dh-it-portal-development.github.io/django-shared-core/"
+
+[project.entry-points]
+"sphinx.html_themes" = { uu_sphinx_theme = "uu_sphinx_theme" }
